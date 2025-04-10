@@ -1,9 +1,12 @@
 body {
     margin-left: 150px;
     margin-right: 150px;
+    text-shadow: #000000 0 3px 10px;
+    font-family:monospace;
+    cursor: default;
 }
 
-li, ul, button {
+li, ul, button, a {
     all: unset;
 }
 
@@ -26,10 +29,12 @@ li, ul, button {
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 9999;
+    
   }
   .brand {
     font-size: 36px;
     font-weight: bold;
+
   }
   .toggler {
     background: none;
@@ -55,6 +60,7 @@ li, ul, button {
   }
   .nav-links a:hover {
     color: #fff;
+    cursor: pointer;
   }
 
 .brandlanguage {
@@ -115,6 +121,7 @@ li, ul, button {
 .AboutImage img {
     border-radius: 20px;
     object-fit: cover;
+    box-shadow: #000 4px 4px 7px;
 }
 
 #SkillContainer {
@@ -146,12 +153,15 @@ li, ul, button {
     border-radius: 15px;
     color: #fff;
     transition: all 0.3s ease-in-out;
+    box-shadow: #000 0 0 10px;
 }
 
 .Skill:hover {
     background-color: #fff;
     color: #007bff;
     transform: scale(1.1);
+    cursor:default;
+    box-shadow: #007bff 0 0 15px;
 }
 
 #ProjectContainer {
@@ -178,14 +188,22 @@ li, ul, button {
 .Project {
     display: inline-block;
     transition: transform 0.5s ease-in-out;
+    
 }
 
 .Project:hover {
     transform: scale(0.95);
+    cursor: pointer;
 }
 
 .Project img {
     border-radius: 20px;
+    box-shadow: #000 5px 5px 10px;
+    transition: box-shadow 0.4s ease-out;
+}
+
+.Project img:hover {
+    box-shadow: #007bff 0 0 12px;
 }
 
 #ContactContainer {
@@ -216,11 +234,19 @@ li, ul, button {
 
 .ContactList a:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .ContactList a img {
     border-radius: 15px;
+    box-shadow: #000 0 3px 4px;
+    transition: box-shadow 0.3s ease-out;
 }
+
+.ContactList a img:hover {
+    box-shadow: #007bff 0 0 7px;
+}
+
 
 footer {
     margin-top: 25px;

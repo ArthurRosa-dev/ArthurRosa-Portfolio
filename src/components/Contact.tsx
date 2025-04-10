@@ -2,11 +2,20 @@ import { useTranslation } from "react-i18next";
 
 function Contact() {
   const { t } = useTranslation();
+
+  let email = "";
+  if (window.innerWidth <= 768) {
+    email = "mailto:arthurrosaofc@gmail.com";
+  } else {
+    email =
+      "https://mail.google.com/mail/?view=cm&fs=1&to=arthurrosaofc@gmail.com";
+  }
+
   return (
     <div id="ContactContainer">
       <h1 className="ContactTitle">{t("contact")}</h1>
       <p className="ContactList">
-        <a href="mailto:arthurrosaofc@gmail.com">
+        <a href={email}>
           <img src="https://img.shields.io/badge/Arthur%20Rosa%20OFC-%23D14836.svg?&style=for-the-badge&logoColor=white&logo=gmail" />
         </a>
         <br />
