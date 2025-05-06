@@ -8,7 +8,6 @@ function Skills() {
     "TypeScript",
     "JavaScript",
     "Git",
-    "Node.js",
   ];
   const { t } = useTranslation();
   return (
