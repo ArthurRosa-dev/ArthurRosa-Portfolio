@@ -1,14 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 function Skills() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "Git",
-  ];
+  const skills = ["HTML", "CSS", "React", "TypeScript", "JavaScript", "Git"];
   const { t } = useTranslation();
   return (
     <div id="SkillContainer">
